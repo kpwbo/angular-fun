@@ -1,0 +1,19 @@
+{
+  "background_color": "#8B786D",
+  "description": "Having fun with Angular",
+  "dir": "ltr",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icons/icon-512x512.png",
+    "sizes": "512x512"
+  }],
+  "lang": "en-CA",
+  "name": "Angular Fun",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "short_name": "Angular Fun",
+  "start_url": "/",
+  "theme_color": "#8B786D"
+}
