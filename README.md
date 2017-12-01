@@ -2,7 +2,7 @@
 
 [![BCH compliance](https://bettercodehub.com/edge/badge/kpwbo/angular-fun?branch=master)](https://bettercodehub.com/)
 
-Demo: http://45.55.160.63/
+Demo: https://kpwbo.com/
 
 ## Development
 
