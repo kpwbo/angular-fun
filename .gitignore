@@ -43,3 +43,8 @@ Thumbs.db
 
 # Configuration Files
 server/config.js
+
+# Self-signed Certificates
+server/server.crt
+server/server.csr
+server/server.key
