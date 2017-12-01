@@ -1,5 +1,7 @@
 # Angular Fun
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/kpwbo/angular-fun?branch=master)](https://bettercodehub.com/)
+
 ## Development
 
 ### Build frontend
