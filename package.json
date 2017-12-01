@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server/main.js",
-    "build": "ng build",
+    "build": "ng build --prod && ng build --prod --app 1 --output-hashing=false && ngsw-config dist/browser/ src/ngsw-config.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -20,7 +20,11 @@
     "@angular/http": "^5.0.0",
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/platform-server": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@angular/service-worker": "^5.0.0",
+    "@nguniversal/express-engine": "^5.0.0-beta.5",
+    "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "core-js": "^2.4.1",
