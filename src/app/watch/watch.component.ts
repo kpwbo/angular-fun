@@ -20,7 +20,7 @@ export class WatchComponent {
     if (this.form.valid) {
       const match = this.form.value.url.match(WatchComponent.URL_REGEX);
       if (match) {
-        const videoUrl = `http://www.youtube.com/embed/${match[1]}?autoplay=1&rel=0`;
+        const videoUrl = `https://www.youtube.com/embed/${match[1]}?autoplay=1&rel=0`;
         this.video = this.sanitizer.bypassSecurityTrustResourceUrl(videoUrl);
       }
     }
