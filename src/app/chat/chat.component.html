@@ -1,0 +1,8 @@
+<section>
+  <ul #list>
+    <li *ngFor="let bubble of bubbles; let last = last" [class]="bubble.type" [class.last]="last">{{ bubble.message }}</li>
+  </ul>
+  <form [formGroup]="form">
+    <input (keyup.enter)="onSubmit()" type="text" name="input" formControlName="input" placeholder="Enter text here" />
+  </form>
+</section>

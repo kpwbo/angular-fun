@@ -1,27 +1,25 @@
-# Chat
+# Angular Fun
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+## Development
 
-## Development server
+### Build frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```npm run build```
 
-## Code scaffolding
+### Run server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```npm start```
 
-## Build
+A ```server/config.js``` file must be written. The file must export an object with the following properties :
+* ```api_key```: the API key of Cleverbot (string);
+* ```session_secret```: the secret used by express-session (string).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Run linter
 
-## Running unit tests
+```npm run lint```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Run tests
 
-## Running end-to-end tests
+```npm run test``` for unit tests.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```npm run e2e``` for e2e tests.

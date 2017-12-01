@@ -1,0 +1,28 @@
+canvas {
+  border: 1px solid #283044;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  background-color: #BFA89E;
+  color: #283044;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #283044;
+  transition: background-color 0.3s ease 0s;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #78A1BB;
+}
