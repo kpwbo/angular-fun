@@ -1,6 +1,6 @@
 <section>
   <form [formGroup]="form">
-    <input (keyup.enter)="onSubmit()" type="text" name="url" formControlName="url" placeholder="https://www.youtube.com/watch?v=XXXX" />
+    <input arial-label="url" id="url" (keyup.enter)="onSubmit()" type="text" name="url" formControlName="url" placeholder="https://www.youtube.com/watch?v=XXXX" />
   </form>
   <iframe *ngIf="video" type="text/html" [src]="video" frameborder="0" allowfullscreen></iframe>
 </section>
