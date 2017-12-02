@@ -3,10 +3,7 @@ import { NgModule, PLATFORM_ID } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { isPlatformBrowser } from '@angular/common';
 
-import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { ChatComponent } from './chat/chat.component';
 import { DrawComponent } from './draw/draw.component';
@@ -31,8 +28,7 @@ const routes: Routes = [
     BrowserModule.withServerTransition({ appId: 'angular-fun' }),
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
-    HttpClientModule,
-    environment.production && isPlatformBrowser(PLATFORM_ID) ? ServiceWorkerModule.register('/ngsw-worker.js') : []
+    HttpClientModule
   ],
   providers: [
     ChatService
